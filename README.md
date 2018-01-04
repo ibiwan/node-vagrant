@@ -6,13 +6,7 @@ It's dangerous to go alone! Here's a reliable Vagrant setup to help you on your 
 
 This uses an Ubuntu 14.04 LTS 64-bit box with sugar, spice and everything that's nice.
 
-## Usage
-
-    vagrant up
-    vagrant ssh
-
-
-## Setup
+## Preparation
 
 Make sure you have installed [VirtualBox] and at least [Vagrant] `1.7.2`.
 
@@ -23,6 +17,21 @@ Installing a Vagrant box (only required if the host lacks the image). Nothing fa
 **Optional**: For future proofing the machine against Virtualbox updates, install the plugin.
 
     $ vagrant plugin install vagrant-vbguest
+
+## Installation
+
+    $ git clone git@github.com:ibiwan/node-vagrant.git
+
+The host machine should have a "projects" directory above the node-vagrant directory; create if nonexistent
+    
+    $ mkdir projects
+    $ cd node-vagrant
+    
+## Usage
+
+
+    vagrant up
+    vagrant ssh
 
 
 ### Provisioning
